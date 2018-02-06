@@ -1,0 +1,12 @@
+---
+declared-services:
+  ClearDB Managed MySQL Database-53:
+    label: cleardb
+    plan: cb5
+applications:
+- disk_quota: 256M
+  name: pathikphp
+  instances: 1
+  memory: 256M
+  services:
+    - ClearDB Managed MySQL Database-53
